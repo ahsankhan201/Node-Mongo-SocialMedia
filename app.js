@@ -32,6 +32,25 @@ app.use('/' , postRout);
 
 
 
+https: app.use(function (req, res, next) {
+    var allowedOrigins = [
+      "http://localhost:3000/",
+    ];
+    var origin = req.headers.origin;
+    if (allowedOrigins.indexOf(origin) > -1) {
+      res.header("Access-Control-Allow-Origin", origin);
+    }
+    res.header(
+      "Access-Control-Allow-Methods",
+      "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+    );
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", true);
+    return next();
+  });
+
+
+
 
 
 //DB

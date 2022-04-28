@@ -19,8 +19,8 @@ exports.createSendJwtToken = (user, statuscode, req, res) => {
 		status: STATUS.SUCCESS,
 		message: SUCCESS_MSG.SUCCESS_MESSAGES.OPERATION_SUCCESSFULL,
 		token,
-		// data: {
-		// 	user,
-		// },
+		data: {
+			user,
+		},
 	});
 };

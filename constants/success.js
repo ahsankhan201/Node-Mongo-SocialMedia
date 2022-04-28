@@ -9,4 +9,5 @@ exports.SUCCESS_MESSAGES = {
     OPERATION_SUCCESSFULL: 'Operation Successfull',
     ACCOUNT_VERIFICATION_TOKEN: 'Account verification token Sent, Please Verify First.',
     ACCOUNT_APPROVED: 'Your account approved Successfully',
+    ALREADY_EXIST: "User already exist"
 };
